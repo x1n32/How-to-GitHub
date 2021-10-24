@@ -6,6 +6,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
+/**Testing Math Utils class
+ * Testing is not debugging. We  take a single object, and test it, by invoking it and 
+ * making sure we get the correct result.
+ *  Testing should be repeatable, self-verifying, runs simultaneouslt, and return the same results.
+ * 
+ */
 class MathUtilsTest {
 	
 	private MathUtils mathUtils;
@@ -14,27 +20,37 @@ class MathUtilsTest {
 	@BeforeEach
 	void initEach() {
 		mathUtils = new MathUtils();
+		System.out.println("Now running tests");
 	}
 
 	@Nested
 	class AddTest {
+
+		@Test
+    	public void shouldAnswerWithTrue(){
+        	assertTrue( true );
+    	}
+
+		@Test
+		public void shouldAnswerWithFalse(){
+        	assertFalse( false );
+    	}
+
+
 		@Test
 		void testAddingTwoPositives() {
-            System.out.println("Adding 1 + 1. Testing for the result to be 2.");
-			assertEquals(2, mathUtils.add(1, 1), 
+    		assertEquals(2, mathUtils.add(1, 1), 
 					"Add method should return the sum of two numbers");
 		}
 		
 		@Test
 		void testAddingTwoNegatives() {
-            System.out.println("Adding -1 + -1. Testing to make sure the answer is -2");
 			assertEquals(-2, mathUtils.add(-1, -1), 
 					"Add method should return the sum of two numbers");
 		}
 		
 		@Test
 		void testAddingAPositiveAndANegative() {
-            System.out.println("Adding -1 + 1. Testing for the result to be 0.");
 			assertEquals(0, mathUtils.add(-1, 1), 
 					"Add method should return the sum of two numbers");
 		}
@@ -42,12 +58,20 @@ class MathUtilsTest {
 	
 	@Test 
 	void testMultiply() {
-        System.out.println("Testing multiplication: 1x0, 1x1 and 2x3");
 		assertAll(
 				() -> assertEquals(0, mathUtils.multiply(1, 0)),
 				() -> assertEquals(1, mathUtils.multiply(1, 1)),
 				() -> assertEquals(6, mathUtils.multiply(2, 3))
 				);
+	}
+	@Test    
+	public void testFiftyTimesTwo_ReturnsOneHundred() {      
+  		// Arrange      
+  		final float expected = 100;        
+  		// Act      
+  		final float actual = mathUtils.multiply(50, 2);        
+  		// Assert      
+  		assertEquals(actual, expected, "Should return 100. 50 x 2 = 100");    
 	}
 	
 	@Test 
@@ -56,9 +80,18 @@ class MathUtilsTest {
 				"Should return right circle area");
 	}
 	
-	@Test
+	@Test 
 	void testDivide() {
-		assertThrows(ArithmeticException.class, () -> mathUtils.divide(1, 0), 
+		assertAll(
+				() -> assertEquals(10, mathUtils.divide(100, 10)),
+				() -> assertEquals(100, mathUtils.divide(150, 1.5f)),
+				() -> assertEquals(0.5, mathUtils.divide(50, 100))
+				);
+	}
+
+	@Test
+	void testDivideArgumentException() {
+		assertThrows(IllegalArgumentException.class, () -> mathUtils.divide(4, 0), 
 				"Divide should throw ArithmeticException when denominator is zero");
 	}
 	
