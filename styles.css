@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background: grey;
+    background: pink;
 
     }
 h1{text-align: center;}
@@ -10,18 +10,13 @@ li{text-align: left;}
 
 .container {
   border-radius: 10px;
-  max-width: 90vw;
+  max-width: 800px;
   display: grid;
-  background: white;
+  background: rgb(255, 243, 243);
   margin:10px auto;
    border: 3px solid rgb(120, 120, 219);
    
 }
-.container > div {
-  background-color:#b0f5f1;
-  text-align: center;
-}
-
 
 
 #navbar {
@@ -70,15 +65,6 @@ section {
   display: flex;
 }
 
-
-
-header{
-  grid-area: header;
-  font-size: 30px;
-  text-align: center;
-
-
-}
 
 /* Style the footer */
 footer {
