@@ -21,16 +21,16 @@ li{text-align: left;}
 
 #navbar {
     background-color: #333;
-    position: fixed;
+    position: sticky;
     top: -50px;
     width: 100%;
-    display: block;
+    
     transition: top 0.3s;
   }
   
   #navbar a {
     float: left;
-    display: block;
+   
     color: #f2f2f2;
     text-align: center;
     padding: 15px;
