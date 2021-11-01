@@ -1,24 +1,60 @@
 <html lang="en">
+
 <head>
     <meta charst="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>About Page</title>
-    <link rel= "stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div id="navbar">
         <a href="/How-to-GitHub/index.html"> Home Icon here</a>
         <a href="/How-to-GitHub/about.html"> About Github</a>
         <a href="/How-to-GitHub/commands.html">Workflow/Commands</a>
-        <a href= "/How-to-GitHub/contact.html"> FAQ and Contacts</a>
-      </div>
+        <a href="/How-to-GitHub/contact.html"> FAQ and Contacts</a>
+        <a href="/How-to-GitHub/Tasks.html">Practice Tests</a>
+        <br><br><br>
+    </div>
 
-      <section>
-          
+    <!-- Sidebar -->
+    <div class="sidebar" style="width:10%">
+        <button class="sidebar_button" onclick="sidebar_close()">Close &times;</button>
+        <h3 class="w3-bar-item">Menu</h3>
+        <a href="#" class="sidebar">Link 1</a>
+        <a href="#" class="sidebarw">Link 2</a>
+        <a href="#" class="sidebar">Link 3</a>
+    </div>
+
+    <section>
+        <h1>What is GitHub?</h1>
+        <p>It is a collaborative version control system.</p>
+    </section>
+    <section>
+        <h1>General Workflow:</h1>
+        <p>
+            General flow:
+            <ol>
+              <li>Create or find a Repositotry that you want to work on</li>
+              <li>Copy link and clone it on a command line (git clone addressName) or download the files</li>
+              <li>Check 'status' on the terminal (git status)</li>
+              <li>Once you made any changes that you want to add to the main file, add your changes to the staging area:</li>
+              <li>'addding' all files: (git add .) </li>
+              <li>'commiting' with a meaningful message to the changes (git commit -m "inital commit") </li>
+              <li>'pushing' (git push origin main) my changes to the main branch</li>
+              <l1>If you want to test your changes by making another branch: (git checkout -b branchName)</l1>
+              <li>After you make more changes, to the same from git add. then you can push your changes to the new branch (git push origin branchname)</li>
+              <li>A Pull Request will be available to the host to accept those changes.</li>
+          </ol>
+        </p>
+    </section>
+    <section>
+        <h1>Images of Alice and Bob with code</h1>
     </section>
 </body>
 
 
-<script src="myscripts.js"></script> 
+<script src="myscripts.js"></script>
+
 </html>

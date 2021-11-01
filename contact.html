@@ -12,12 +12,42 @@
         <a href="/How-to-GitHub/about.html"> About Github</a>
         <a href="/How-to-GitHub/commands.html">Workflow/Commands</a>
         <a href= "/How-to-GitHub/contact.html"> FAQ and Contacts</a>
+        <a href="/How-to-GitHub/Tasks.html">Practice Tests</a>
+        <br><br><br>
       </div>
 
       <section>
-          
+        <h1>Developer: Matthew Chau</h1>
+        <h2>Email: x1n32 at students dot keele dot ac dot uk</h2>
+      </section>
+      <section>
+          <h1>Frequently asked questions: </h1>
+      </section>
+      <section>
+          <h1>Submit a question</h1>
+          <form action= "submit.php" method="POST" autocomplete="on">
+            <ul class="form-style">
+            <fieldset>
+            <!--Legend is part o the fieldset; adds a nice border-->
+            <legend>Question/ Feature Request/ Praise</legend>
+                <!--Information to be entered with matching data types-->
+                <!--Also limitation on size, to add validation.-->
+                <li>Title: <input type="text" name="titleName"  minlength="1" size="30" placeholder="e.g.Question: How do I ..." required></li>          
+                <!--Admins enter the event details here. Calls a function 'noCommas' where it uses regular expression. See bottom of page-->
+                <li>Details:<textarea id = "message" name="message" style="width:200px; height:200px;"
+                placeholder="e.g. How do I set up a Repositotry"></textarea></li>
+            
+                <p id="msg">Thank you.</p>
+                <li><button type="submit" >Submit</button></li>
+            </ul>
+            </fieldset>
+            </form>
       </section>
 
+      <section>
+          <h1>Websites and References used: </h1>
+          <p>https://www.searchenginejournal.com/examples-contact-us-pages/378518/#close</p>
+      </section>
 </body>
 
 <script src="myscripts.js"></script> 

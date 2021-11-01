@@ -12,6 +12,8 @@
         <a href="/How-to-GitHub/about.html"> About Github</a>
         <a href="/How-to-GitHub/commands.html">Workflow/Commands</a>
         <a href= "/How-to-GitHub/contact.html"> FAQ and Contacts</a>
+        <a href="/How-to-GitHub/Tasks.html">Practice Tests</a>
+        <br><br><br>
       </div>
 
       <section>
@@ -21,30 +23,38 @@
         <tr>
           <th>Git Commands</th>
           <th>What they do:</th>
+          <th>Example:</th>
         </tr>
         <tr>
           <td>git add </td>
           <td>Moves files to a staging area</td>
+          <th>git add file.html</th>
         </tr>
-      </table> 
-
-      <p>
-          General flow:
-          <ol>
-            <li>Create or find a Repositotry that you want to work on</li>
-            <li>Copy link and clone it on a command line (git clone addressName) or download the files</li>
-            <li>Check 'status' on the terminal (git status)</li>
-            <li>Once you made any changes that you want to add to the main file, add your changes to the staging area:</li>
-            <li>'addding' all files: (git add .) </li>
-            <li>'commiting' with a meaningful message to the changes (git commit -m "inital commit") </li>
-            <li>'pushing' (git push origin main) my changes to the main branch</li>
-            <l1>If you want to test your changes by making another branch: (git checkout -b branchName)</l1>
-            <li>After you make more changes, to the same from git add. then you can push your changes to the new branch (git push origin branchname)</li>
-            <li>A Pull Request will be available to the host to accept those changes.</li>
-        </ol>
-      </p>
-      
-      </section>
+        <tr>
+          <td>git commit </td>
+          <td>After you "add" your files, you need to commit them and add a meaningful message to your changes.</td>
+          <th>git commit -m "the -m means message; Adding file.html to the repository. If you want to add every file, use . instead of the filename." </th>
+        </tr>
+        <tr>
+          <td>git push </td>
+          <td>You now need to push your local changes onto the online repository.</td>
+          <th>git push origin branchName</th>
+        </tr>
+        <tr>
+          <td>git fork </td>
+          <td>Downloading copy of a repository for you to work on (independant from the original) so that you can reuse the code or improve it.</td>
+          <th>CLick the fork icon on a public repository:  <img src="images/Forking.png" alt="Screenshot of repository showing where the fork icon is" width="42" height="42" style="vertical-align:middle;margin:0px 50px"> </th>
+        </tr>
+        <tr>
+          <td>git clone </td>
+          <td>When a Git repository is cloned, the target repository remains shared amongst all of the developers who had previously contributed to it. Other developers who had previously contributed to that codebase will continue to push their changes and pull updates from the cloned repository.</td>
+          <th>git clone https://github.com/x1n32/How-to-GitHub.git</th>
+        </tr>
+      </table>  
+    </section>
+    <section>
+      <h1>Example Images: </h1>
+    </section>
 </body>
 
 <script src="myscripts.js"></script> 
