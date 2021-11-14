@@ -18,8 +18,12 @@ li{text-align: left;}
    
 }
 #navbar {
-  overflow: hidden;
   background-color: #333;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
 }
 
 #navbar a {
@@ -27,7 +31,7 @@ li{text-align: left;}
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 15px;
   text-decoration: none;
   font-size: 17px;
 }
