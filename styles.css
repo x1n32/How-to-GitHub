@@ -8,15 +8,7 @@ h2{text-align: center;}
 li{text-align: left;}
 
 
-.container {
-  border-radius: 10px;
-  max-width: 800px;
-  display: grid;
-  background: rgb(255, 243, 243);
-  margin:10px auto;
-   border: 3px solid rgb(120, 120, 219);
-   
-}
+
 #navbar {
   overflow: hidden;
   background-color: #333;
@@ -73,11 +65,12 @@ li{text-align: left;}
   }
 
   /* Container for flexboxes */
+  /*
 section {
   display: -webkit-flex;
   display: flex;
 }
-
+*/
 
 /* Style the footer */
 footer {
