@@ -1,4 +1,6 @@
 
+
+/*
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {stickyScrollFunction()};
 
@@ -16,7 +18,7 @@ function stickyScrollFunction() {
     navbar.classList.remove("sticky");
   }
 } 
-
+*/
 
 function sidebar_open() {
   document.getElementById("sidebar").style.display = "block";
