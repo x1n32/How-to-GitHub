@@ -1,10 +1,14 @@
 body{
   margin: 0;
   background: pink;
+  font-size: large;
 
 }
 h1{text-align: center;}
 h2{text-align: center;}
+h3{text-align: center;}
+p{text-align: center;}
+
 li{text-align: left;}
 
 
@@ -21,8 +25,8 @@ li{text-align: left;}
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
-  height: 80px;
+  font-size: 20px;
+  height: 40px;
 }
 
 #navbar a:hover {
@@ -63,7 +67,7 @@ table {
 }
   
 td, th {
-  border: 1px solid #dddddd;
+  border: 5px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
