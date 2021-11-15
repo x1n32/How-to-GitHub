@@ -1,11 +1,11 @@
 body{
   margin: 0;
+  padding: 70px;
   background: pink;
   font-size: large;
 
 }
-h1{text-align: center;
-background: white;}
+h1{text-align: center;}
 
 h2{text-align: center;}
 h3{text-align: center;}
@@ -86,7 +86,9 @@ section {
   display: flex;
 }
 
-
+header {
+  background: white;
+}
 /* Style the footer */
 footer {
   background-color: #777;
