@@ -35,6 +35,7 @@ const today = date.getDate();
 const currentMonth = date.getMonth() + 1; //runs from 0 to 11, that's why we add 1
 const timeElapsed = Date.now();
 const today = new Date(timeElapsed);
+today.toDateString();
 
 function formatDate(date, format) {
   const map = {
@@ -46,5 +47,5 @@ function formatDate(date, format) {
   return format.replace(/mm|dd|yy|yyy/gi, matched => map[matched])
 }
 
-document.getElementById("date").innerHTML = today.toDateString();
+document.getElementById("date").innerHTML = today;
 document.getElementById("date2").innerHTML = formatDate(date, dd/mm/yyyy);
