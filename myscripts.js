@@ -19,7 +19,7 @@ function stickyScrollFunction() {
   }
 } 
 */
-
+/*
 function sidebar_open() {
   document.getElementById("sidebar").style.display = "block";
 }
@@ -28,6 +28,9 @@ function sidebar_close() {
   document.getElementById("sidebar").style.display = "none";
 }
 
+*/
+
+document.getElementById("demo").innerHTML = 5 + 6;
 
 const date = new Date();
 const currentYear = date.getFullYear();
@@ -53,5 +56,3 @@ function formatDate(date, format) {
 document.getElementById("date2").innerHTML = formatDate(date, dd/mm/yyyy);
 
 
-
-document.getElementById("demo").innerHTML = 5 + 6;
