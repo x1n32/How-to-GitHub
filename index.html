@@ -71,6 +71,8 @@
 </body>
 
 <script>
+    
+document.getElementById("demo").innerHTML = 5 + 6;
   const date = new Date();
 const currentYear = date.getFullYear();
 const today = date.getDate();
@@ -82,21 +84,11 @@ today.toDateString();
 document.getElementById("date").innerHTML = today;
 document.getElementById("date3").innerHTML = currentYear;
 
-function formatDate(date, format) {
-  const map = {
-      mm: date.getMonth() + 1,
-      dd: date.getDate(),
-      yy: date.getFullYear().toString().slice(-2),
-      yyyy: date.getFullYear()
-  }
-  return format.replace(/mm|dd|yy|yyy/gi, matched => map[matched])
-}
 
 document.getElementById("date2").innerHTML = formatDate(date, dd/mm/yyyy);
 
 
 
-document.getElementById("demo").innerHTML = 5 + 6;
     </script>
     
     <script src="myscripts.js"></script>
