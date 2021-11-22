@@ -51,3 +51,7 @@ function formatDate(date, format) {
 }
 
 document.getElementById("date2").innerHTML = formatDate(date, dd/mm/yyyy);
+
+
+
+document.getElementById("demo").innerHTML = 5 + 6;
