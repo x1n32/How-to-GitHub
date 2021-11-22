@@ -71,26 +71,23 @@
 </body>
 
 <script>
-    
-document.getElementById("demo").innerHTML = 5 + 6;
-  const date = new Date();
-const currentYear = date.getFullYear();
-const today = date.getDate();
-const currentMonth = date.getMonth() + 1; //runs from 0 to 11, that's why we add 1
-const timeElapsed = Date.now();
-const today = new Date(timeElapsed);
-today.toDateString();
 
-document.getElementById("date").innerHTML = today;
-document.getElementById("date3").innerHTML = currentYear;
+    document.getElementById("demo").innerHTML = 5 + 6;
 
+    const date = new Date();
+    const currentYear = date.getFullYear();
+    const today = date.getDate();
+    const currentMonth = date.getMonth() + 1; //runs from 0 to 11, that's why we add 1
+    const timeElapsed = Date.now();
+    const today = new Date(timeElapsed);
+    today.toDateString();
 
-document.getElementById("date2").innerHTML = formatDate(date, dd/mm/yyyy);
+    document.getElementById("date").innerHTML = today;
+    document.getElementById("date3").innerHTML = currentYear;
 
 
 
-    </script>
-    
-    <script src="myscripts.js"></script>
+
+</script>
 
 </html>
