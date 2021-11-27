@@ -1,24 +1,89 @@
 <html lang="en">
+
 <head>
     <meta charst="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>About Page</title>
-    <link rel= "stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <div id="navbar">
-        <a href="/How-to-GitHub/index.html"> Home Icon here</a>
-        <a href="/How-to-GitHub/about.html"> About Github</a>
+        <a href="/How-to-GitHub/index.html"> <i class="fa fa-fw fa-home"></i>Home</a>
+        <!-- removed <img src="images/HomeLogo.jpg" >-->
+        <a class="active" href="/How-to-GitHub/about.html"> About Github</a>
         <a href="/How-to-GitHub/commands.html">Workflow/Commands</a>
-        <a href= "/How-to-GitHub/contact.html"> FAQ and Contacts</a>
-      </div>
+        <a href="/How-to-GitHub/contact.html"> FAQ and Contacts</a>
+        <a href="/How-to-GitHub/Tasks.html">Practice Tests</a>
+        <br><br><br>
+    </div>
 
-      <section>
-          
+
+    <header id="content">
+        <h1>What is GitHub?</h1>
+    </header>
+    <p>Git is a collaborative open-source version control system </p>
+    <p>This means a history of pushed changes make it easy to rollback/rollforward to easily make changes.</p>
+    <p>This also make it easy to work with others as you can share code to work on the same project</p>
+    <p>It makes use of branches, where you make 'alternate timelines' to test out code before pushing it to the main
+        code.</p>
+    <p>Anyone can create repositories where it gets stored on GitHub to back-up code or to share!</p>
+    <p>You can use GitHub Pages to load html files like this.</p>
+
+
+    <section>
+        <h1>General Workflow:</h1>
+
+        <ol>
+            <li>Create or find a Repositotry that you want to work on</li>
+            <li>Copy link and clone it on a command line (git clone addressName) or download the files</li>
+            <li>Check 'status' on the terminal (git status)</li>
+            <li>Once you made any changes that you want to add to the main file, add your changes to the staging area:
+            </li>
+            <li>'addding' all files: (git add .) </li>
+            <li>'commiting' with a meaningful message to the changes (git commit -m "inital commit") </li>
+            <li>'pushing' (git push origin main) my changes to the main branch</li>
+            <l1>If you want to test your changes by making another branch: (git checkout -b branchName)</l1>
+            <li>After you make more changes, to the same from git add. then you can push your changes to the new branch
+                (git push origin branchname)</li>
+            <li>A Pull Request will be available to the host to accept those changes.</li>
+        </ol>
+
     </section>
+
+
+    <h1>Images of Alice and Bob with code</h1>
+    <section>
+        <img src="images/img_avatar.jpg" alt="Avatar" class="avatar">
+        <p>Hey Alice! I did some coding! Why don't you have a look!</p><br>
+    </section>
+
+    <section>
+        <img src="images/img_avatar2.jpg" alt="Avatar" class="avatar">
+        <p>Looks Great Bob! You made a typo. Let me fix it for you</p>
+        <img src="images/git add and comit.jpg" alt="git add .  git commit -m Changes"><br>
+    </section>
+
+    <section>
+        <img src="images/img_avatar.jpg" alt="Avatar" class="avatar">
+        <p>Thanks! Go and open a pull request so I can merge it to the main branch! It's on the top, right next to
+            'code' and 'issues'</p>
+    </section>
+    <section>
+        <img src="images/img_avatar2.jpg" alt="Avatar" class="avatar">
+        <p>Alright! I opened a pull request!</p>
+        <img src="images/Pull Request.png" alt="Open Pull Request" width="600" height="500"><br>
+    </section>
+
+    <br>
+
+
+
 </body>
 
 
-<script src="myscripts.js"></script> 
+<script src="myscripts.js"></script>
+
 </html>

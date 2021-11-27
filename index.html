@@ -1,86 +1,76 @@
 <html lang="en">
+
 <head>
     <meta charst="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel= "stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+</head>
+
+<body>
     <div id="navbar">
-        <a href="/How-to-GitHub/index.html"> Home Icon here</a>
+        <a class="active" href="/How-to-GitHub/index.html"> <i class="fa fa-fw fa-home"></i>Home</a>
         <a href="/How-to-GitHub/about.html"> About Github</a>
         <a href="/How-to-GitHub/commands.html">Workflow/Commands</a>
-        <a href= "/How-to-GitHub/contact.html"> FAQ and Contacts</a>
-      </div>
+        <a href="/How-to-GitHub/contact.html"> FAQ and Contacts</a>
+        <a href="/How-to-GitHub/Tasks.html">Practice Tests</a>
+        <br><br><br>
+    </div>
 
-     <div class="container">
-      <h1>HOW-TO-GUIDE FOR STUDENTS TO GITHUB HOME PAGE</h1>
-      <h2>3rd Year Project</h2>
-      <h2>BY MATTHEW CHAU, x1n32, 1900 4815</h2>
-    
-<section>
-    <p>What I done so far:</p>
+    <header id="content">
+        <h1>HOW-TO-GUIDE FOR STUDENTS</h1>
+        <h2>3rd Year Project 2021-2022</h2>
+        <h2>BY MATTHEW CHAU, x1n32, 1900 4815</h2>
+        <h2>Special Thanks to my Supervisors: Fiona Polack and Marco Ortolani</h2><br>
+    </header><br>
+
+    <h3>What is on this webpage?</h3>
+
+    <p>A General guide on GitHub and git commands.</p>
+    <p>Links to some java code to practice the basics, and learn about Unit Testing with JUnit</p>
+    <br>
+
+    <h3>Aims and Objectives</h3>
+    <p>To create a usable and understandable skills-aid demo for Keele Computer Science students
+        to showcase the collaboration features of Collaborative Development Tools/ Version Control Systems
+        that could be used for all programming and design modules. </p>
+
+    <h3>How to get there:</h3>
     <ol>
-        <li>Created a new Repositotry on GitHub</li>
-        <li>Copied link of my address and cloned it to my computer using the clone command on the terminal: 'git clone https://github.com/x1n32/How-to-GitHub.git' (without the quotes)</li>
-        <li>On the terminal, opened VSCode (code .) to create and edit a index file.</li>
-        <li>Checking 'status' on the terminal (git status)</li>
-        <li>'addding' (git add .) </li>
-        <li>'commiting' (git commit -m inital commit) </li>
-        <li>'pushing' (git push origin main) my changes to the main branch</li>
-        <li>Needed to generate a personal access token for VSCode to sign in instead of password: Go on GitHub, settings, developer settings, and Personal Access Token. Generate.</li>
-        <l1>Created another branch to test out adding css (git checkout -b Styling)</l1>
-        <li>Created a css document and linked it on href in the index.html file</li>
-        <li>Adding those changes with git add .</li>
-        <li>git commit -m styling</li>
-        <li>git push origin Styling</li>
-        <li>Merged Styles branch to Main Bracnh on GitHub via Pull Request</li>
+        <li> Research what students may need to learn that are relevant to their studies</li>
+        <li>Research relevant studies that could help improve the quality and usability of the tutorials </li>
+        <li>Create an information/skills page using GitHub (Pages/Classroom).</li>
+        <li>Create two-to-three meaningful, but easy-to-implement Use Case scenarios (increasing in difficulty from
+            beginner level) demos
+            showcasing a specific topic in programming,
+            where errors are purposely produced to showcase Unit Testing and Continuous Integration,
+            so that students can learn from mistakes via meaningful error messages and so they can learn by doing. </li>
+        <li>Create a questionnaire/survey to examine the quality,
+            usability, and ethics of the project.</li>
+
     </ol>
-</section>
-<section>
-    <p>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-        Dummy content <br>
-    </p>
+    </section>
 
-</section>
 
-     </div> <!--End containers-->
-<footer>
-    <h1>Footer</h1>
-    <P>Contact us</P>
-    <p>About us</p>
-    <p>Last Updated: Sat 30/10/21 12:22</p>
-    
-</footer>
-  
+    <br><br>
+    <footer>
+        <h1>Footer</h1>
+        <P>Contact us</P>
+        <p>About us</p>
+        <p>Last Updated: Sun 31/10/21 15:31</p>
+        <p id="date">date1</p>
+        <p id="date2">date2</p>
+        <p id="date3">year</p>
+        <p id="demo">demo</p>
+
+    </footer>
+
 </body>
 
-<script src="myscripts.js"></script> 
+<script src = "myscripts.js">
+</script>
+
 </html>

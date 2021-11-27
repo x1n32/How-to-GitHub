@@ -1,71 +1,94 @@
 body{
-    margin: 0;
-    background: pink;
+  margin: 0;
+  padding: 10px;
+  background: pink;
+  font-size: large;
 
-    }
+}
 h1{text-align: center;}
+
 h2{text-align: center;}
+h3{text-align: center;}
+p{text-align: center;
+font-size: larger;}
+
 li{text-align: left;}
 
 
-.container {
-  border-radius: 10px;
-  max-width: 800px;
-  display: grid;
-  background: rgb(255, 243, 243);
-  margin:10px auto;
-   border: 3px solid rgb(120, 120, 219);
-   
-}
-
 
 #navbar {
-    background-color: #333;
-    position: fixed;
-    top: -50px;
-    width: 100%;
-    display: block;
-    transition: top 0.3s;
-  }
-  
-  #navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  #navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
+  overflow: hidden;
+  background-color: #333;
+}
 
-  table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  height: 40px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+#navbar img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+*/
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
   
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
+td, th {
+  border: 5px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
   
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 
   /* Container for flexboxes */
+
 section {
   display: -webkit-flex;
   display: flex;
 }
 
-
+header {
+  background: white;
+}
 /* Style the footer */
 footer {
   background-color: #777;
@@ -80,4 +103,11 @@ footer {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }

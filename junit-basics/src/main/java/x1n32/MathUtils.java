@@ -1,8 +1,8 @@
 package x1n32;
 
 /**
- * A public class that has methods to do math related operations
- * Has add, subtract, multiply, divide, and can calculate area of a circle.
+ * A class that has methods to do math related operations.
+ * Can add, subtract, multiply, divide, and can calculate area of a circle.
  * 
  */
 public class MathUtils {
