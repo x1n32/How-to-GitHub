@@ -30,6 +30,8 @@ function sidebar_close() {
 
 */
 
+
+/*
 document.getElementById("demo").innerHTML = 5 + 6;
 
 const date = new Date();
@@ -56,3 +58,4 @@ function formatDate(date, format) {
 document.getElementById("date2").innerHTML = formatDate(date, dd/mm/yyyy);
 
 
+*/
