@@ -34,15 +34,17 @@
         <th>Example:</th>
       </tr>
       <tr>
-        <td>git add </td>
+        <td>git add {filename} </td>
         <td>Moves files to a staging area</td>
         <th>git add file.html</th>
+        <th>git add .    //Adding all files changes in a directory</th>
       </tr>
       <tr>
         <td>git commit </td>
         <td>After you "add" your files, you need to commit them and add a meaningful message to your changes.</td>
-        <th>git commit -m "the -m means message; Adding file.html to the repository. If you want to add every file, use
-          . instead of the filename." </th>
+        <th>git commit -m 'commit message'</th>
+        <th>git commit filename -m 'commit message'  //Add and commit </th>
+        
       </tr>
       <tr>
         <td>git push </td>
@@ -70,8 +72,9 @@
       </tr>
       <tr>
         <td>git branch </td>
-        <td>.</td>
-        <th>.</th>
+        <td>A branch is like a timeline. If you want to test ideas without affecting the main code, it is useful to make a branch and merge it later when it is ready.</td>
+        <th>git checkout -b branchname //Create new branch</th>
+        <th>git push origin branchname //pushing changes on branch</th>
       </tr>
       <tr>
         <td>git checkout </td>
