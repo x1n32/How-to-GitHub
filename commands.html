@@ -35,27 +35,27 @@
       </tr>
       <tr>
         <td>git add {filename} </td>
-        <td>Moves files to a staging area</td>
-        <th>git add file.html
-        git add .    //Adding all files changes in a directory</th>
+        <td>Moves files to a staging area. You can choose a specific file or all the files.</td>
+        <th>git add file.html OR
+            git add . </th>
       </tr>
       <tr>
         <td>git commit </td>
-        <td>After you "add" your files, you need to commit them and add a meaningful message to your changes.</td>
-        <th>git commit -m 'commit message'
-        git commit filename -m 'commit message'  //Add and commit </th>
+        <td>After you "add" your files, you need to commit them and add a meaningful message to your changes. The second example here adds a file and commits it.</td>
+        <th>git commit -m 'commit message' OR
+        git commit filename -m 'commit message'  </th>
         
       </tr>
       <tr>
         <td>git push </td>
-        <td>You now need to push your local changes onto the online repository.</td>
-        <th>git push origin branchName</th>
+        <td>You now need to push your local changes onto the online repository. A simple 'git push' can work as well. Sometimes you need to specify the branch.</td>
+        <th>git push origin main</th>
       </tr>
       <tr>
         <td>git fork </td>
         <td>Downloading copy of a repository for you to work on (independant from the original) so that you can reuse
           the code or improve it.</td>
-        <th>CLick the fork icon on a public repository </th>
+        <th>Click the fork icon on a public repository </th>
       </tr>
       <tr>
         <td>git clone </td>
@@ -67,7 +67,7 @@
      
       <tr>
         <td>git pull {link} </td>
-        <td>.</td>
+        <td>Incorporates changes from a remote repository into the current branch. If changes are made by your teammates while you are working, you need to update your repository with the updated one to push your changes.</td>
         <th>git pull https://github.com/x1n32/How-to-GitHub.git</th> <!--Change to calulator task link maybe?-->
       </tr>
       <tr>
@@ -78,8 +78,9 @@
       </tr>
       <tr>
         <td>git checkout </td>
-        <td>.</td>
-        <th>.</th>
+        <td>check-out the branch you are interested in; giving you a local working copy. The second example is to undo local changes to a File.
+        </td>
+        <th>git checkout -b branchName OR git checkout -- filename</th>
       </tr>
     </table>
   </section>
