@@ -1,16 +1,36 @@
 body{
   margin: 0;
   padding: 10px;
-  background: pink;
+  background: lightgray;
   font-size: large;
 
 }
 h1{text-align: center;}
 
-h2{text-align: center;}
-h3{text-align: center;}
-p{text-align: center;
-font-size: larger;}
+.button {
+  border: none;
+  color: white;
+  padding: 32px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #4CAF50; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #abe0ae;
+  color: black;
+}
+
 
 li{text-align: left;}
 
