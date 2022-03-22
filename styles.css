@@ -21,13 +21,13 @@ h1{text-align: center;}
 }
 
 .button1 {
-  background-color: #4CAF50; 
+  background-color: rgb(248, 183, 183); 
   color: black; 
-  border: 2px solid #4CAF50;
+  border: 2px solid black;
 }
 
 .button1:hover {
-  background-color: #abe0ae;
+  background-color: rgb(255, 136, 136);
   color: black;
 }
 
